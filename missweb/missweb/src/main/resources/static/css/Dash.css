@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,800;1,200;1,500;1,600;1,900&display=swap");
+body{
+    background: url("https://images.pexels.com/photos/1111318/pexels-photo-1111318.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    padding-top:4em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+/* Style for the car item container */
+.car-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background:white;
+  }
+  
+  /* Style for the car image */
+  .car-item img {
+    width: 100%;
+    height: 20em;
+  }
+  
+  /* Style for the car buttons container */
+  .car-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  /* Style for the book and rent buttons */
+  .book-btn,
+  .rent-btn {
+    margin: 0px 10px;
+    padding: 10px 20px;
+  }
+  
+  /* Style for the container of car items */
+  .car-items-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+/* Style for the car description */
+.car-details h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: -3em;
+  }
+  
+  .car-details p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+     margin-left: -5em;
+  }
+.car-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+     margin-left: -5em;
+}

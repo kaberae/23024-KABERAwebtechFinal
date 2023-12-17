@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymyleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>One Page Wonder - Start Bootstrap Template</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container px-5">
+        <a class="navbar-brand" th:href="@{/}">MISS WORLD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{${'/adminDashboard/users?missis='+missid}}">Users List</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{${'/adminDashboard?missid='+missid}}"> Admin Dashboard</a></li>-->
+<!--                <li class="nav-item"><a class="nav-link" th:href="@{${'/adminDashboard/users/InsertUser?missid='+missid}}">Insert User</a></li>-->
+                <li class="nav-item"><a class="nav-link" th:href="@{/signup}">Sign up</a></li>
+                <li class="nav-item"><a class="nav-link" th:href="@{/loginUser}">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Header-->
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+        <div class="container px-5">
+            <h1 class="masthead-heading mb-0">WONDER WOMEN ARE HERE!!</h1>
+            <h2 class="masthead-subheading mb-0">BEAUTY PAGEANTS ARE HERE!!</h2>
+            <h3 class="masthead-subheading mb-0">WHO WILL WIN?</h3>
+            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+        </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+</header>
+<!-- Content section 1-->
+<section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLxeph1DbazBMl74ADfesGK583ZpsEMwDWFq83NZnLlAxQ7N228D6yAZDCe5RMAopGuY8q1m2kvQUGw-p7t_v32ZuPsMUCo26SamQc8-k73mZkeK3tmIJ-nlUGLxLz136ph3mgp3AlSTAvnQ0vI84fAGntZu5agSxmciQuH1RD6FAxG5YQ-uPrst-E/w512-h640/Miss%20Venezuela%20World%202021%20Ariagny%20Dabo%C3%ADn.jpg" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Beauty beyond boundaries, wisdom that inspires, and the world as our stage</h2>
+                    <p>The Miss World Competition is not just a beauty pageant, but a celebration of cultural diversity and female empowerment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 2-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy7Up1csGxTKXjpSszTjyIu1yn7xLrx326GAHeYgQolDqkdlh9lAHJcv_3IkyjYrVkXNdL0-0L1du4nYrOTeplaYdOyfwCe2TMIkJojf5rko9LRjzbAb-3lQhsKT0CKUNCKG7btw6yEXTFSZTYkpeq3xwnCVY1yXrUaovr1o3zS31qS7yM9miJ0_b7/w512-h640/Miss%20World%20Costa%20Rica%202022%20-%20Se%C3%B1orita%20Costa%20Rica%202022%20Krisly%20Salas.jpg" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Miss World celebrates diversity</h2>
+                    <p>Being a part of the Miss World Competition was a life-changing experience. It was an honor to represent my country on a global stage and meet so many inspiring women.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content section 3-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYv_7oOVOrzRbtSfGQ2AGfkiqUQ2NtLI74COHT2GCcxMcRr7ZxHl6_VHjRCcq5MA2LehMiXRYA0MgAeck7SRqzatSqUt5ZKKuTNLLCmXpAejWLyih7CqrPP9MUwIMhyPyag31X_XJjYLpQMQobhxzUPuXgFWkL13C8-FQLkJiGWrHBrI4hvbS_2vGV/w522-h640/Miss%20World%20Czech%20Republic%202022%20Krystyna%20Pyszkova%CC%81.jpg" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Empowers women to make a positive impact on the world.</h2>
+                    <p>The Miss World Competition showcases the beauty, talent, and intelligence of women from all over the world. It's a truly unique and unforgettable event.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="py-5 bg-black">
+    <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Miss World 2023</p></div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>

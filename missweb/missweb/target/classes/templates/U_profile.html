@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymyleaf.org">
+<head>
+  <title>USERS LIST</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link th:href="@{/css/Profile.css}" rel="stylesheet" />
+<!--  <link href="/static/css/Profile.css" rel="stylesheet" />-->
+  <link th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+  <div class="container px-5">
+    <a class="navbar-brand display-4" th:href="@{/}">MISS WORLD</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" th:href="@{${'/dashBoard?missid='+missid}}">BACK TO DASHBOARD</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="user-profile">
+  <div class="user-avatar">
+    <img src="https://www.missworld.com/images/img-logo-big@3x.png" alt="User Avatar">
+  </div>
+  <div class="user-details">
+    <p th:text="${'Your Role: '+user.role}" class="user-role">Role</p>
+    <h1 th:text="${'Your Names: '+user.names}" class="user-name">Names</h1>
+    <p th:text="${'Your Email: '+user.userId}" class="user-id">User ID</p>
+    <p th:text="${'Your Email: '+user.email}" class="user-email">Email</p>
+    <p th:if="${user.voted =='NO'}"  class="user-voted">No, you have not Voted Yet</p>
+    <p th:if="${user.voted =='YES'}"  class="user-voted">Yes, you voted</p>
+   <a class="btn bnt-primary" th:href="@{${'/dashBoard?missid='+missid}}">Back To Dashboard</a>
+  </div>
+</div>
+</body>
+</html>
